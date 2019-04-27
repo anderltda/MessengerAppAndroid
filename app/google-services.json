@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "662383105600",
+    "firebase_url": "https://messenger-32489.firebaseio.com",
+    "project_id": "messenger-32489",
+    "storage_bucket": "messenger-32489.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662383105600:android:6a4cae9be46f4381",
+        "android_client_info": {
+          "package_name": "br.com.anderltda.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662383105600-kmv86k0ko8ab703n1qka637a7ies79vr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.anderltda.messenger",
+            "certificate_hash": "6dc73d943fd9f4ace8f808dd460846ca3208158b"
+          }
+        },
+        {
+          "client_id": "662383105600-r6spmanrqmojghe7uva6f072jdqdkok6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS1qn7-VkEsrYnSThjL1M6YZt-tbX0UJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662383105600-r6spmanrqmojghe7uva6f072jdqdkok6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

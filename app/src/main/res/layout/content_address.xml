@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:id="@+id/root"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:orientation="vertical"
+                                             android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/space20">
+        <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="Brasil (+55)"
+                android:layout_marginTop="75dp"
+                style="@style/EditText"
+                android:textAppearance="@style/ExtraLight"/>
+        <EditText
+                android:id="@+id/et_zip_code"
+                android:layout_below="@id/tv_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_zip_code" style="@style/EditText"
+                android:focusable="true"
+                android:drawableRight="@drawable/ic_search"
+                android:maxLength="8"
+                android:textAppearance="@style/ExtraLight"
+                android:inputType="number|textPostalAddress"/>
+        <TextView
+                android:id="@+id/tv_address"
+                android:layout_below="@id/et_zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_address"
+                android:layout_marginTop="0dp" style="@style/EditText"
+                android:textAppearance="@style/ExtraLight"/>
+
+        <EditText
+                android:id="@+id/et_number"
+                android:layout_below="@id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_number"
+                android:inputType="phone"
+                style="@style/EditText"
+                android:focusable="true"
+                android:textAppearance="@style/ExtraLight"/>
+
+        <TextView
+                android:layout_below="@id/et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/perfil_address_message_footer"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/spaceLR"
+                android:paddingRight="@dimen/spaceLR"
+                android:paddingTop="@dimen/space20"
+                android:paddingBottom="@dimen/space20"
+                style="@style/h3Info"
+                android:background="@drawable/bg_top_grey"
+                android:textAppearance="@style/ExtraLight"/>
+        <Button
+                android:id="@+id/bt_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/sign_bt_continue"
+                style="@style/ButtonPink"
+                android:textAppearance="@style/ExtraLight"
+                android:layout_marginBottom="57dp"/>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

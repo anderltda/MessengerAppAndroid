@@ -1,3 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MessengerAppAndroid</string>
+    <string name="app_name">Messenger</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_sign_in" translatable="false">Sign-In</string>
+    <string name="title_chat" translatable="false">Talk</string>
+    <string name="title_location" translatable="false">Location</string>
+    <string name="title_address" translatable="false">Address</string>
+    <string name="title_settings" translatable="false">Settings</string>
+    <string name="title_about" translatable="false">About</string>
+    <string name="success_message_default" translatable="false">Successful process</string>
+    <string name="erro_message_fields_required" translatable="false">All fields are required</string>
+    <string name="login_message_header" translatable="false">Login and Password</string>
+    <string name="login_login">Login</string>
+    <string name="login_bt_login" translatable="false">Login</string>
+    <string name="login_message_footer" translatable="false">Please confirm your login and password</string>
+    <string name="sign_fullname" translatable="false">Full Name</string>
+    <string name="sign_email">E-mail</string>
+    <string name="sign_password" translatable="false">Password</string>
+    <string name="sign_phone" translatable="false">Phone (11) 99999-9999</string>
+    <string name="sign_message_header" translatable="false">Your phone number</string>
+    <string name="sign_message_footer">Please confirm your country code and enter your phone number</string>
+    <string name="sign_bt_continue">Continue</string>
+    <string name="sign_plus" translatable="false">Sign-in</string>
+    <string name="perfil_menu_address">Address</string>
+    <string name="perfil_zip_code">Zip code</string>
+    <string name="perfil_address">Address</string>
+    <string name="perfil_number">Number</string>
+    <string name="perfil_message_footer">Please update information personal</string>
+    <string name="perfil_address_message_footer">Please information address for location</string>
+    <string name="title_contacts" translatable="false">Contacts</string>
+    <string name="chat_button_send" translatable="false">Send</string>
+    <string name="chat_message_your" translatable="false">Enter your message</string>
+    <string name="about_name_app">Messager</string>
+    <string name="about_name_dev" translatable="false">Anderson Nascimento Developer</string>
+    <string name="about_version" translatable="false">Version 1.0.0</string>
+    <string name="about_logout" translatable="false">Logout</string>
+    <string name="title_activity_maps" translatable="false">Map</string>
+    <string name="title_person" translatable="false">Profile</string>
+
+<!-- TODO: Remove or change this placeholder text -->
 </resources>
