@@ -150,7 +150,9 @@ class ChatActivity : BaseActivity() {
 
                 send(et_message.text.toString())
 
-                //list.smoothScrollToPosition(list.getAdapter()!!.getItemCount() - 1)
+                if(list.getAdapter()!!.getItemCount() > 0) {
+                    list.smoothScrollToPosition(list.getAdapter()!!.getItemCount() - 1)
+                }
 
                 et_message.setText("")
             }
@@ -203,7 +205,7 @@ class ChatActivity : BaseActivity() {
 
             e.printStackTrace()
 
-            snackbar("Failed to increment ${chat.name}")
+            snackbar("Failed to increment ${chat.id}")
         }
     }
 
@@ -215,7 +217,7 @@ class ChatActivity : BaseActivity() {
 
         }.addOnFailureListener { e ->
                 e.printStackTrace()
-                snackbar("Failed to delete ${chat.name}")
+                snackbar("Failed to delete ${chat.id}")
         }
     }
 
@@ -233,7 +235,6 @@ class ChatActivity : BaseActivity() {
         var user = userDao.findId(auth.currentUser!!.uid.toString())
 
         val chat = Chat()
-        chat.name = user.name
         chat.id =  auth.currentUser!!.uid.toString()
         chat.time = Calendar.getInstance().getTime()
         chat.message = message
