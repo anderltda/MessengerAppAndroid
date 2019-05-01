@@ -234,7 +234,7 @@ class ChatActivity : BaseActivity() {
 
         val chat = Chat()
         chat.name = user.name
-        chat.uid =  auth.currentUser!!.uid.toString()
+        chat.id =  auth.currentUser!!.uid.toString()
         chat.time = Calendar.getInstance().getTime()
         chat.message = message
         refStates.document().set(chat);
