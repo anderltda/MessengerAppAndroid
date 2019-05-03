@@ -1,11 +1,13 @@
 package br.com.anderltda.messenger.activity
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import br.com.anderltda.messenger.R
 import br.com.anderltda.messenger.fragment.*
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -40,9 +42,8 @@ class MainActivity : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView
         .OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.navigation_setting -> {
-                    newFragment(SettingFragment.newInstance())
-                    return@OnNavigationItemSelectedListener true
+                R.id.navigation_exit -> {
+                    logout()
                 }
                 R.id.navigation_chat -> {
                     newFragment(ContactFragment.newInstance())
@@ -62,6 +63,15 @@ class MainActivity : AppCompatActivity() {
                 }
         }
         false
+    }
+
+    private fun logout() {
+
+        FirebaseAuth.getInstance().signOut()
+
+        val next = Intent(this, LoginActivity::class.java)
+        startActivity(next)
+        finish()
     }
 
     private fun newFragment(fragment: Fragment) {

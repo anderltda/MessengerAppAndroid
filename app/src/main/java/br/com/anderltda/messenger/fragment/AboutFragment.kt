@@ -26,14 +26,12 @@ class AboutFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_about, container, false)
 
         val toolbar = view.findViewById<Toolbar>(R.id.toolbar)
-        toolbar.inflateMenu(R.menu.menu_about)
+        //toolbar.inflateMenu(R.menu.menu_about)
         toolbar.setOnMenuItemClickListener { item ->
 
             when (item.itemId) {
 
                 R.id.nav_logout -> {
-
-                    logout()
 
                     return@setOnMenuItemClickListener true
                 }
@@ -46,14 +44,7 @@ class AboutFragment : Fragment() {
         return view
     }
 
-    private fun logout() {
 
-        FirebaseAuth.getInstance().signOut()
-
-        val next = Intent(activity, LoginActivity::class.java)
-        startActivity(next)
-        activity!!.finish()
-    }
 
     private fun excluirUserFirebaseAuth() {
 

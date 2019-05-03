@@ -33,7 +33,7 @@ class LocationFragment : Fragment() {
         FirebaseFirestore.getInstance()
     }
 
-    private val refStates by lazy {
+    private val reference by lazy {
         firestore.collection(Constants.CONTACTS_LOCATION_APP_FIREBASE)
     }
 
@@ -52,7 +52,7 @@ class LocationFragment : Fragment() {
         title.text = resources.getString(R.string.title_location)
 
         adapter = LocationAdapter({
-            refStates.orderBy(sort, Query.Direction.ASCENDING)
+            reference.orderBy(sort, Query.Direction.ASCENDING)
         })
 
 

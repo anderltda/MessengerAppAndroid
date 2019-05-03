@@ -47,7 +47,7 @@ class ChatActivity : BaseActivity() {
         FirebaseFirestore.getInstance()
     }
 
-    private val refStates by lazy {
+    private val reference by lazy {
 
         val it = intent
 
@@ -81,7 +81,7 @@ class ChatActivity : BaseActivity() {
 
         adapter = ChatAdapter({
 
-            refStates.orderBy(sort, Query.Direction.ASCENDING)
+            reference.orderBy(sort, Query.Direction.ASCENDING)
 
         })
 
@@ -238,7 +238,7 @@ class ChatActivity : BaseActivity() {
         chat.id =  auth.currentUser!!.uid.toString()
         chat.time = Calendar.getInstance().getTime()
         chat.message = message
-        refStates.document().set(chat);
+        reference.document().set(chat);
 
     }
 

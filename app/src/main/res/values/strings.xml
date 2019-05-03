@@ -7,6 +7,7 @@
     <string name="title_location" translatable="false">Location</string>
     <string name="title_address" translatable="false">Address</string>
     <string name="title_settings" translatable="false">Settings</string>
+    <string name="title_logoff" translatable="false">Exit</string>
     <string name="title_about" translatable="false">About</string>
     <string name="success_message_default" translatable="false">Successful process</string>
     <string name="erro_message_fields_required" translatable="false">All fields are required</string>
