@@ -126,6 +126,10 @@ class PersonFragment : Fragment() {
         user.update = Calendar.getInstance().getTime()
         reference.document(user.id).set(user);
         userDao.save(user)
+
+        Toast.makeText(activity,
+            resources.getString(R.string.success_message_default),
+            Toast.LENGTH_LONG).show()
     }
 
 
