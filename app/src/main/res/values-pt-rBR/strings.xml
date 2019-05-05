@@ -26,11 +26,11 @@
     <string name="title_activity_maps" translatable="false">Mapas</string>
     <string name="title_activity_sign_in" translatable="false">Cadastrar-se</string>
     <string name="title_address">Endereço</string>
-    <string name="title_chat">Papo</string>
+    <string name="title_chat">Conversas</string>
     <string name="title_contacts">Contato</string>
-    <string name="title_location">Localizaçao</string>
+    <string name="title_location">Localização</string>
     <string name="title_person">Perfil</string>
     <string name="title_settings" translatable="false">Configurações</string>
-    <string name="about_version" translatable="false">Versao 1.0.0</string>
+    <string name="about_version" translatable="false">Versão 1.0.0</string>
     <string name="title_logoff" translatable="false">Sair</string>
 </resources>

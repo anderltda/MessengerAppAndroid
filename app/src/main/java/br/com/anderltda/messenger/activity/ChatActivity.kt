@@ -105,9 +105,9 @@ class ChatActivity : BaseActivity() {
             incrementDocument(chatData, snapshot.reference)
 
         }
+
         adapter.onClickListener = { position ->
-            Snackbar.make(root, "$position clicked", Snackbar.LENGTH_SHORT)
-                .show()
+            Snackbar.make(root, "$position clicked", Snackbar.LENGTH_SHORT).show()
         }
 
         val list = findViewById<RecyclerView>(R.id.recyclerView)
@@ -232,10 +232,11 @@ class ChatActivity : BaseActivity() {
             .build()
 
         userDao = appDatabase.userDao()
+
         var user = userDao.findId(auth.currentUser!!.uid.toString())
 
         val chat = Chat()
-        chat.id =  auth.currentUser!!.uid.toString()
+        chat.id =  user.id
         chat.time = Calendar.getInstance().getTime()
         chat.message = message
         reference.document().set(chat);

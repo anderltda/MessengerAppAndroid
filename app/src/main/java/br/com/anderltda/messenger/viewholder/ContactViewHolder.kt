@@ -8,6 +8,7 @@ import android.widget.TextView
 import br.com.anderltda.messenger.R
 import br.com.anderltda.messenger.data.entity.User
 import java.text.SimpleDateFormat
+import java.util.*
 
 class ContactViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -31,10 +32,7 @@ class ContactViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 //    var buttonUp: View = itemView.findViewById(R.id.button_up)
 
     fun bind(user: User) {
-
-        val dataFormatada = SimpleDateFormat("h:mm a").format(user.create)
-
         name.text = user.name
-        create.text = dataFormatada
+        create.text = SimpleDateFormat("h:mm a").format(user.create!!)
     }
 }
