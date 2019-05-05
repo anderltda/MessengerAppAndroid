@@ -29,22 +29,20 @@ class ChatViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         }
     }
 
-
     var message: TextView = itemView.findViewById(R.id.tv_chat_text)
 
     var time: TextView = itemView.findViewById(R.id.tv_time)
 
-    //var name: TextView = itemView.findViewById(R.id.text_other)
-
     //var buttonDelete: View = itemView.findViewById(R.id.button_delete)
 
-    //var buttonUp: View = itemView.findViewById(R.id.button_up)*/
+    //var buttonUp: View = itemView.findViewById(R.id.button_up)
 
     fun bind(chat: Chat) {
 
-        val dataFormatada = SimpleDateFormat("h:mm a").format(chat.time)
-        //name.text = chat.name
-        time.text = dataFormatada
+        //Hora do envio da mensagem
+        time.text = SimpleDateFormat("h:mm a").format(chat.time)
+
+        //Mensagem enviada
         message.text = chat.message
 
     }

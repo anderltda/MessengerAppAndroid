@@ -21,14 +21,9 @@ class LocationViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     var name: TextView = itemView.findViewById(R.id.tv_user_name)
 
-
- //   var textOther: TextView = itemView.findViewById(R.id.text_other)
-
- //   var buttonDelete: View = itemView.findViewById(R.id.button_delete)
-
-//    var buttonUp: View = itemView.findViewById(R.id.button_up)
-
     fun bind(address: Address) {
+
+        //Nome do contato que deseja ser visto no mapa
         name.text = address.name
     }
 }
